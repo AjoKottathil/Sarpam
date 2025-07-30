@@ -1,0 +1,12 @@
+def get_even_numbers(numbers):
+    return [num for num in numbers if num % 2 == 0]
+num=[]
+num = input("Enter numbers separated by spaces: ")
+
+numbers_list = list(map(int, num.split()))
+
+even_numbers = get_even_numbers(numbers_list)
+
+print("the original list :",[num])
+
+print("Even numbers:", even_numbers)
